@@ -10,6 +10,7 @@
 % https://github.com/edunham/resume/blob/master/resume.tex
 
 \documentclass[11pt]{article} % Set default font size to 11pt
+\usepackage[utf8]{inputenc}
 \input{preamble}
 \begin{document}
 
@@ -21,13 +22,23 @@
         {github.com/arielb1}
         {Tel-Aviv, Israel}
 
+\heading{About}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+My résumé isn't yet long enough to stand out on its own, so let me introduce myself. \\
+
+I'm Ariel. I have been programming for quite some time and I have grown to understand and love math quite well since I started my degree at age 14. I'm quite good at finding information, learning \& understanding new things, and figuring out solutions. I consider myself quite good at working in teams, as long as I have space to do things on my own. \\
+
+I enjoy computer things, math, geeking out, reading about science in the Internet (never got around to Actually Doing It, but that's your chance), Kalafina's songs, and watching Nature. \\
+
 \heading{Skills}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As I said, I know quite a lot of things and I am always ready to learn new stuff, but here are some things I am very good at: \\
 
 \skill{Programming}
       {Rust, Python, C/\CPP}
 
 \skill{System Administration}
-      {Everything Linux Userspace}
+      {Everything Linux Userspace, Debian, Red Hat, bash, ssh, etc.}
 
 \skill{Collaboration}
       {Git, IRC, decent Technical Writing}
@@ -51,7 +62,7 @@ Handled the integration of Check Point's solution with Linux, including rewritin
 
 Developing the Rust programming language \& compiler - a new, safe, fast \& productive \CPP-class language.
 
-Designed and helped design parts of the type-system and middle-end. Improved compiler performance by tens of percents. Took responsibility and fixed many compiler bugs and regressions.
+Designed and helped design parts of the type-system and middle-end. Improved compiler performance by tens of percents. Reduced compiler stack usage by over 16x. Took responsibility and fixed many compiler bugs and regressions.
 
 \end{description}
 
@@ -64,10 +75,22 @@ Designed and helped design parts of the type-system and middle-end. Improved com
            {}
            {2011-2016}
 
-BSc in Mathematics and Computer Science including Logic, Machine Learning, Parallel Computation.
+           BSc in Mathematics and Computer Science including Logic, Machine Learning, Parallel Computation.
 
 \end{description}
 
+\heading{Security Bugs}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{description}
+\squish
+\experience{Tarsnap Path NUL overflow}
+           {}
+           {04/2014}
+
+No CVE, refs: \\
+   - http://www.daemonology.net/blog/2015-08-21-tarsnap-1000-exploit-bounty.html \\
+   - https://github.com/Tarsnap/tarsnap/commit/c3a7532770e6ab5d9310d4104962113566099305 \\
+\end{description}
 
 %\experience{Linux.Conf.Au}
 %           {}
